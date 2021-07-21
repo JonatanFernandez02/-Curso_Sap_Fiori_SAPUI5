@@ -1,0 +1,12 @@
+<mvc:View controllerName="Curso_SAPFIORI.SAPUI5.controller.App"
+xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+
+<Input value="{/recipient/name}"
+description=" Buenas tardes, {/recipient/name}"
+valueLiveUpdate="true"
+placeholder="Ingrese su nombre"
+width="40%">
+</Input>
+
+<Button text="{i18n>showHelloButton}" press=".onShowHello"></Button>
+</mvc:View>
