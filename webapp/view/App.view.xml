@@ -1,0 +1,27 @@
+<mvc:View controllerName="Curso_SAPFIORI.SAPUI5.controller.App"
+          xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc"
+           xmlns:core="sap.ui.core"
+          displayBlock="true">
+  <Shell> <!-- para aprovechar el total de la pantalla, responsive -->
+<App>
+    <pages>
+        <Page title="{i18n>appTitle}" > 
+        <headerContent>
+                    <Button id="HelloDialogHeader" 
+                    text= "REUTILIZAMOS BTN DE DIALOG"
+                    icon="sap-icon://action" 
+                    press=".onOpenDialogHeader" 
+                    class="sapUiSmallMarginEnd"/>
+        </headerContent>
+            <content>
+            <mvc:XMLView viewName="Curso_SAPFIORI.SAPUI5.view.HelloPanel"/> 
+            <mvc:XMLView viewName="Curso_SAPFIORI.SAPUI5.view.InvoicesList"/> 
+            <!-- <core:Fragment fragmentName="Curso_SAPFIORI.SAPUI5.view.Form01" type="XML" /> -->
+            <!-- reutilizo fragmento aca arriba -->
+            </content>
+        </Page>
+    </pages>
+</App>
+</Shell>
+</mvc:View>
